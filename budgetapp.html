@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="csszabudgetapp.css" type="text/css">      
+    </head>
+    <body>
+        
+        <table style="width:70%" >
+            <tr>
+                <td>
+                    <form>   
+                        <form id="Forma1">                
+                        <h3>Prihodi</h3>   
+                        <img src="budget.svg" width="40" alt="" /> <br> <br>
+                        <input id="prihodi" type= number placeholder="Unesi prihod"> 
+                        <input id="opisp" type="text"  placeholder="Opis prihoda"> 
+                        <br>
+                        <br>
+                        <button id="botunprihod" type="button" onclick="dohvatiPrihode()"> UNESI </button>
+                        <br> <br>
+                        <input id="totalp" type=number>                           
+                    </form>
+                </td>
+                <td>
+                    <form>   
+                        <form id="Forma2">                
+                        <h3>Troškovi</h3>   
+                        <img src="money.svg" width="40" alt="" /> <br> <br>
+                        <input id="troskovi" type= number placeholder="Unesi trošak"> 
+                        <input id="opist" type="text" placeholder="Opis troška">
+                        <br> <br>
+                        <button type="button" onclick="dohvatiTroskove()"> UNESI </button>
+                        <br> <br>
+                        <input id="totalt" type=number>           
+                    </form>
+                </td>
+                <td>
+                    <form>    
+                        <h3>Balans</h3>
+                        <img src="balans.svg" width="40" alt="" />   <br> <br>       
+                        <button type="button" onclick="izracunajBalans()"> IZRAČUNAJ STANJE </button> <input id="totalb" type=number>           
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <form id="Forma3"> 
+                            <h3>Ispis prihoda </h3>
+                            <p id="ispis"> </p>
+                    </form>
+                </td>
+                <td>
+                    <form>
+                        <form id="Forma4"> 
+                            <h3>Ispis troškova </h3>
+                            <p id="ispistroskovi"> </p>
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+        
+        <script src="budgetapp.js"></script>   
+    </body>
+</html>
+
